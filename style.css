@@ -1,0 +1,40 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  height: 100%;
+}
+#chat-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+#chat-header {
+  background: #4285f4;
+  color: white;
+  padding: 10px;
+  font-weight: bold;
+}
+#chat-body {
+  flex: 1;
+  padding: 10px;
+  overflow-y: auto;
+  background: #f1f1f1;
+}
+#chat-input {
+  display: flex;
+  border-top: 1px solid #ccc;
+}
+#chat-input input {
+  flex: 1;
+  padding: 10px;
+  font-size: 14px;
+  border: none;
+}
+#chat-input button {
+  background: #4285f4;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+}
