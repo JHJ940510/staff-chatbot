@@ -6,15 +6,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
 </head>
-<body onload="openChat()">
-  <div id="chat-container">
-    <div id="chat-header">직원용 챗봇</div>
+<body>
+  <button id="open-btn" onclick="toggleChat()">💬 챗봇 열기</button>
+
+  <div id="chat-container" style="display:none;">
+    <div id="chat-header">
+      직원용 챗봇
+      <span id="close-btn" onclick="toggleChat()">✖</span>
+    </div>
     <div id="chat-body"></div>
     <div id="chat-input">
       <input type="text" id="user-input" placeholder="질문을 입력하세요">
       <button onclick="sendMessage()">전송</button>
     </div>
   </div>
+
   <script src="script.js"></script>
 </body>
 </html>
